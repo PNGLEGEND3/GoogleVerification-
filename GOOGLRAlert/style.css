@@ -1,0 +1,179 @@
+body {
+    /* Utilizarea fonturilor Google, cu fallback-uri */
+    font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
+    background-color: #f8f9fa; /* Fundal foarte deschis */
+    display: flex;
+    justify-content: center; /* Centrează conținutul orizontal */
+    align-items: center; /* Centrează conținutul vertical */
+    min-height: 100vh; /* Ocupă toată înălțimea vizibilă a paginii */
+    margin: 0;
+    color: #202124; /* Culoare de text specifică Google (gri închis) */
+    box-sizing: border-box; /* Asigură că padding și border sunt incluse în lățime/înălțime */
+}
+
+/* Stiluri pentru containerul principal al formularului */
+.container {
+    background-color: #ffffff;
+    padding: 48px 40px; /* Padding generos pentru un aspect curat */
+    border-radius: 8px;
+    /* Umbră complexă care imită stilul Google */
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 4px 8px 3px rgba(60, 64, 67, 0.149);
+    text-align: center;
+    max-width: 480px; /* Lățime maximă pentru lizibilitate */
+    width: 90%; /* Responsivitate pe ecrane mai mici */
+    box-sizing: border-box;
+}
+
+/* Stiluri pentru titlul "Google Security" */
+header h1 {
+    color: #4285F4; /* Albastru specific Google */
+    font-size: 2.5em; /* Mărimea titlului */
+    font-weight: 500; /* Greutate medie a fontului */
+    margin-bottom: 20px;
+    letter-spacing: normal; /* Fără spațiere specifică între litere */
+    text-transform: none; /* Litere mari și mici, nu doar majuscule */
+}
+
+/* Stiluri pentru paragraful de descriere */
+.description {
+    font-size: 1.1em;
+    color: #5f6368; /* Gri închis pentru descriere */
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Stiluri pentru gruparea etichetelor și câmpurilor de formular */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Aliniază la stânga etichetele și câmpurile */
+}
+
+/* Stiluri pentru etichetele câmpurilor de formular */
+.form-group label {
+    display: block; /* Fiecare etichetă pe o linie nouă */
+    margin-bottom: 8px;
+    font-weight: 500; /* Ușor mai gros decât textul normal */
+    color: #3c4043;
+    font-size: 0.9em; /* Mărime puțin mai mică pentru etichetă */
+}
+
+/* Stiluri pentru câmpurile de selectare și introducere a textului */
+.form-group select,
+.form-group input[type="tel"] {
+    width: 100%; /* Ocupă toată lățimea disponibilă */
+    padding: 14px 15px; /* Padding generos */
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Asigură că padding și border sunt incluse în lățime */
+    color: #202124; /* Culoarea textului introdus */
+    /* Tranziție pentru un efect fluid la focus */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Stiluri când un câmp de formular este selectat (focus) */
+.form-group select:focus,
+.form-group input[type="tel"]:focus {
+    border-color: #4285F4; /* Culoare albastră la focus */
+    outline: none; /* Elimină outline-ul implicit al browserului */
+    /* Umbră albastră mai complexă la focus, similară cu Google */
+    box-shadow: 0 1px 1px 0 rgba(66, 133, 244, 0.3), 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+/* Stiluri pentru butonul de trimitere */
+button[type="submit"] {
+    background-color: #4285F4; /* Albastru specific Google */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em; /* Mărime standard a textului butonului */
+    font-weight: 500; /* Greutate medie a fontului */
+    cursor: pointer; /* Cursor de tip mână la hover */
+    transition: background-color 0.3s ease; /* Animație la hover */
+    margin-top: 30px; /* Spațiu deasupra butonului */
+    letter-spacing: 0.25px; /* Ușoară spațiere pentru textul butonului */
+}
+
+/* Stiluri pentru butonul de trimitere la hover */
+button[type="submit"]:hover {
+    background-color: #357ae8; /* O nuanță mai închisă de albastru la hover */
+    box-shadow: 0 1px 3px 1px rgba(60,64,67,.15); /* Adaugă o umbră la hover */
+}
+
+/* Stiluri pentru linkurile utile din subsol */
+.links-footer {
+    margin-top: 40px; /* Spațiu consistent față de formular */
+    font-size: 0.85em; /* Mărime text mai mică */
+}
+
+.links-footer a {
+    color: #1a73e8; /* Albastru specific linkurilor Google */
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 0 0 4px 0; /* Spațiu jos pentru efectul de subliniere la hover */
+    border-bottom: 1px solid transparent; /* Linie transparentă pentru tranziție */
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+/* Stiluri pentru linkuri la hover */
+.links-footer a:hover {
+    border-bottom: 1px solid #1a73e8; /* Subliniază la hover */
+}
+
+/* Stiluri pentru mesajul de succes (afisat de JavaScript) */
+.success-message-wrapper {
+    padding: 30px 20px;
+}
+
+/* Stiluri pentru imaginea ta personalizată de succes (descărcare.png) */
+.success-message-wrapper .custom-success-image {
+    max-width: 100px; /* Setează lățimea maximă, o poți ajusta */
+    height: auto; /* Păstrează proporțiile imaginii */
+    margin-bottom: 20px;
+    display: block; /* Ocupă propria linie */
+    margin-left: auto; /* Centrează imaginea */
+    margin-right: auto; /* Centrează imaginea */
+}
+
+.success-message-wrapper .success-title {
+    color: #202124;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.success-message-wrapper .success-text {
+    font-size: 1.1em;
+    color: #5f6368;
+    line-height: 1.5;
+}
+
+/* Media Queries pentru responsivitate (adaptează designul pentru ecrane mici) */
+@media (max-width: 600px) {
+    body {
+        /* Pe mobil, elimină alinierea verticală pentru a permite scroll-ul dacă e nevoie */
+        align-items: flex-start;
+    }
+    .container {
+        padding: 30px 20px; /* Mai puțin padding pe ecrane mici */
+        border-radius: 0; /* Pe mobil, Google adesea elimină border-radius */
+        box-shadow: none; /* Și umbrele pe mobil, pentru un aspect "full-width" */
+        width: 100%; /* Ocupă toată lățimea ecranului mobil */
+        min-height: 100vh; /* Ocupă întreaga înălțime pe mobil */
+        margin: 0; /* Elimină marginile pe mobil */
+    }
+    header h1 {
+        font-size: 2em; /* Mărime mai mică pentru titlu pe mobil */
+    }
+    .description {
+        font-size: 1em;
+    }
+    button[type="submit"] {
+        width: 100%; /* Butonul să ocupe toată lățimea pe mobil */
+    }
+    .links-footer a {
+        display: block; /* Linkurile din subsol pe linii separate pe mobil */
+        margin: 8px 0;
+    }
+}

